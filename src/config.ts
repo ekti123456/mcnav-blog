@@ -11,7 +11,7 @@ import type {
 import { LinkPreset } from "./types/config";
 
 export const siteConfig: SiteConfig = {
-	title: "EKTI Blog",
+	title: "不惑菌MC",
 	subtitle: "分享与交流",
 	description: "分享网络技术、服务器部署、游戏、日常、MC玩家、交友",
 
@@ -19,8 +19,8 @@ export const siteConfig: SiteConfig = {
 	lang: "zh_CN", // 'en', 'zh_CN', 'zh_TW', 'ja', 'ko', 'es', 'th'
 	themeColor: {
 		hue: 361, // Default hue for the theme color, from 0 to 360. e.g. red: 0, teal: 200, cyan: 250, pink: 345
-		fixed: true, // Hide the theme color picker for visitors
-		forceDarkMode: true, // Force dark mode and hide theme switcher
+		fixed: false, // Hide the theme color picker for visitors
+		forceDarkMode: false, // Force dark mode and hide theme switcher
 	},
 	banner: {
 		enable: false,
@@ -41,7 +41,7 @@ export const siteConfig: SiteConfig = {
 		size: "cover", // Background size: 'cover', 'contain', 'auto'
 		repeat: "no-repeat", // Background repeat: 'no-repeat', 'repeat', 'repeat-x', 'repeat-y'
 		attachment: "fixed", // Background attachment: 'fixed', 'scroll', 'local'
-		opacity: 0.5, // Background opacity (0-1)
+		opacity: 1, // Background opacity (0-1)
 	},
 	toc: {
 		enable: true, // Display the table of contents on the right side of the post
@@ -50,7 +50,7 @@ export const siteConfig: SiteConfig = {
 	favicon: [
 		// Leave this array empty to use the default favicon
 		{
-			src: "https://q2.qlogo.cn/headimg_dl?dst_uin=3965729714&spec=0", // Path of the favicon, relative to the /public directory
+			src: "/favicon.png", // Path of the favicon, relative to the /public directory
 			//   theme: 'light',              // (Optional) Either 'light' or 'dark', set only if you have different favicons for light and dark mode
 			//   sizes: '32x32',              // (Optional) Size of the favicon, set only if you have favicons of different sizes
 		},
@@ -61,7 +61,7 @@ export const navBarConfig: NavBarConfig = {
 	links: [
 		LinkPreset.Home,
 		LinkPreset.Archive,
-		LinkPreset.About,
+		// LinkPreset.About,
 		// {
 		//     name: "友链",
 		//     url: "/friends/", // Internal links should not include the base path, as it is automatically added
@@ -74,27 +74,27 @@ export const navBarConfig: NavBarConfig = {
 		},
 		{
 			name: "统计",
-			url: "https://cloud.umami.is/analytics/us/share/e0fRy9wzWZh9u8Ec?hostname=eq.blog.ekti.cc", // Internal links should not include the base path, as it is automatically added
+			url: "https://cloud.umami.is/analytics/us/share/fZP1Xp6jjWlpSYij?hostname=mcnav.cc", // Internal links should not include the base path, as it is automatically added
 			external: true, // Show an external link icon and will open in a new tab
 		},
 	],
 };
 
 export const profileConfig: ProfileConfig = {
-	avatar: "https://q2.qlogo.cn/headimg_dl?dst_uin=3965729714&spec=0", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
-	name: "EKTI",
+	avatar: "/avatar.png", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
+	name: "不惑菌MC",
 	bio: "Protect What You Love.",
 	links: [
-		{
-			name: "Bilibli",
-			icon: "fa6-brands:bilibili",
-			url: "https://space.bilibili.com",
-		},
-		{
-			name: "GitHub",
-			icon: "fa6-brands:github",
-			url: "https://github.com/ekti123456",
-		},
+		// {
+		// 	name: "Bilibli",
+		// 	icon: "fa6-brands:bilibili",
+		// 	url: "https://space.bilibili.com",
+		// },
+		// {
+		// 	name: "GitHub",
+		// 	icon: "fa6-brands:github",
+		// 	url: "https://github.com/ekti123456",
+		// },
 	],
 };
 
@@ -113,9 +113,9 @@ export const imageFallbackConfig: ImageFallbackConfig = {
 export const umamiConfig: UmamiConfig = {
 	enable: true,
 	baseUrl: "https://cloud.umami.is",
-	shareId: "e0fRy9wzWZh9u8Ec",
+	shareId: "fZP1Xp6jjWlpSYij",
 	timezone: "Asia/Shanghai",
-	hostname: "blog.ekti.cc",
+	hostname: "mcnav.cc",
 };
 
 export const expressiveCodeConfig: ExpressiveCodeConfig = {
@@ -124,7 +124,7 @@ export const expressiveCodeConfig: ExpressiveCodeConfig = {
 
 export const gitHubEditConfig: GitHubEditConfig = {
 	enable: true,
-	baseUrl: "https://github.com/ekti123456/fuwari/blob/main/src/content/posts",
+	baseUrl: "https://github.com/ekti123456/mcnav-blog/blob/main/src/content/posts",
 };
 
 export const statsConfig = {

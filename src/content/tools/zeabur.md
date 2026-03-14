@@ -1,6 +1,6 @@
 ---
 title: Zeabur 云服务
-published: 2025-11-17
+published: 2026-03-13
 description: Zeabur 是一个现代化的云部署平台，让开发者能够轻松部署和管理应用程序。
 tags: ["云部署"]
 url: https://zeabur.com
